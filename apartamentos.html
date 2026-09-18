@@ -97,7 +97,7 @@
       <article class="card anim-surgir" data-regiao="${apto.regiaoFiltro}">
         <a href="apartamento.html?id=${apto.id}" class="card-imagem" aria-label="Ver detalhes de ${apto.nome}">
           <img src="${apto.imagens[0]}" alt="Interior do ${apto.nome}, em ${apto.regiao}" loading="lazy">
-          <span class="card-selo">${apto.hospedes ? apto.hospedes + " hóspedes" : apto.tipo}</span>
+          ${apto.hospedes || apto.tipo ? `<span class="card-selo">${apto.hospedes ? apto.hospedes + " hóspedes" : apto.tipo}</span>` : ""}
         </a>
         <div class="card-corpo">
           <span class="card-regiao">${apto.regiao}</span>

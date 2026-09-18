@@ -138,10 +138,11 @@
               <span class="card-regiao">${apto.regiao}</span>
               <h1>${apto.nome}</h1>
               <div class="detalhe-meta">
-                ${apto.hospedes ? `<div class="detalhe-meta-item"><strong>${apto.hospedes}</strong>Hóspedes</div>
-                <div class="detalhe-meta-item"><strong>${apto.quartos}</strong>Quartos</div>
-                <div class="detalhe-meta-item"><strong>${apto.camas}</strong>Camas</div>
-                <div class="detalhe-meta-item"><strong>${apto.banheiros}</strong>Banheiros</div>` : `<div class="detalhe-meta-item"><strong>${apto.tipo}</strong>Tipo de hospedagem</div>`}
+                ${apto.hospedes ? `<div class="detalhe-meta-item"><strong>${apto.hospedes}</strong>Hóspedes</div>` : ""}
+                ${apto.quartos ? `<div class="detalhe-meta-item"><strong>${apto.quartos}</strong>Quartos</div>` : ""}
+                ${apto.camas ? `<div class="detalhe-meta-item"><strong>${apto.camas}</strong>Camas</div>` : ""}
+                ${apto.banheiros ? `<div class="detalhe-meta-item"><strong>${apto.banheiros}</strong>Banheiros</div>` : ""}
+                ${!apto.quartos ? `<div class="detalhe-meta-item"><strong>${apto.tipo}</strong>Tipo de hospedagem</div>` : ""}
               </div>
               <button class="btn btn-whatsapp btn-bloco" onclick="abrirWhatsApp('${mensagem}')" aria-label="Consultar disponibilidade de ${apto.nome} pelo WhatsApp">
                 Consultar no WhatsApp
@@ -157,7 +158,7 @@
                 <p>${apto.descricao}</p>
               </div>
               <div class="detalhe-bloco anim-surgir">
-                <h2>${apto.hospedes ? "Comodidades" : "O que está incluído"}</h2>
+                <h2>${apto.quartos ? "Comodidades" : "O que está incluído"}</h2>
                 <ul class="lista-check">${comodidades}</ul>
               </div>
               ${regras ? `<div class="detalhe-bloco anim-surgir">
