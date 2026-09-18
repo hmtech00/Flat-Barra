@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apartamentos em Salvador | Bahia Stay</title>
-<meta name="description" content="Conheça nossos apartamentos para aluguel por temporada na Barra, Salvador. Consulte disponibilidade pelo WhatsApp.">
+<meta name="description" content="Conheça nossos apartamentos na Barra, Salvador, e opções de resorts na Bahia. Consulte disponibilidade pelo WhatsApp.">
 <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -37,8 +37,8 @@
   <section class="hero-interno">
     <div class="container">
       <span class="etiqueta" style="color:var(--cor-terracota); text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; font-weight:700;">Hospedagem em Salvador</span>
-      <h1>Nossos apartamentos</h1>
-      <p>Selecionamos acomodações confortáveis no bairro da Barra, em Salvador, para tornar sua estadia prática, segura e cheia de charme. A disponibilidade deve ser confirmados diretamente pelo WhatsApp.</p>
+      <h1>Nossa hospedagem</h1>
+      <p>Selecionamos apartamentos confortáveis no bairro da Barra, em Salvador, e opções de resorts no Litoral Norte da Bahia para tornar sua estadia prática, segura e cheia de charme. A disponibilidade deve ser confirmados diretamente pelo WhatsApp.</p>
     </div>
   </section>
 
@@ -97,15 +97,15 @@
       <article class="card anim-surgir" data-regiao="${apto.regiaoFiltro}">
         <a href="apartamento.html?id=${apto.id}" class="card-imagem" aria-label="Ver detalhes de ${apto.nome}">
           <img src="${apto.imagens[0]}" alt="Interior do ${apto.nome}, em ${apto.regiao}" loading="lazy">
-          <span class="card-selo">${apto.hospedes} hóspedes</span>
+          <span class="card-selo">${apto.hospedes ? apto.hospedes + " hóspedes" : apto.tipo}</span>
         </a>
         <div class="card-corpo">
           <span class="card-regiao">${apto.regiao}</span>
           <h3><a href="apartamento.html?id=${apto.id}">${apto.nome}</a></h3>
-          <div class="card-meta">
+          ${apto.quartos ? `<div class="card-meta">
             <span><img src="assets/images/icons/cama.svg" alt="" class="icone-img"> ${apto.quartos} quarto(s)</span>
             <span><img src="assets/images/icons/chuveiro.svg" alt="" class="icone-img"> ${apto.banheiros} banheiro(s)</span>
-          </div>
+          </div>` : ""}
           <p class="card-descricao">${apto.descricaoCurta}</p>
           <div class="card-acoes">
             <a href="apartamento.html?id=${apto.id}" class="btn btn-secundario btn-sm">Ver detalhes</a>

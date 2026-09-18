@@ -69,7 +69,7 @@ const IMG = {
   exp5: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/AKARA.jpg/1280px-AKARA.jpg"],
   exp6: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Praia_do_Porto_da_Barra_%28Salvador%29.jpg/1280px-Praia_do_Porto_da_Barra_%28Salvador%29.jpg"],
   exp7: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fachada_Aeroporto_de_Salvador2.jpg/1280px-Fachada_Aeroporto_de_Salvador2.jpg"],
-  exp9: ["https://upload.wikimedia.org/wikipedia/commons/9/97/Arembepe_Praia.jpg"],
+  resort: ["https://upload.wikimedia.org/wikipedia/commons/9/97/Arembepe_Praia.jpg"],
   exp8: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg/1280px-Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg"],
 };
 
@@ -112,6 +112,18 @@ const apartamentos = [
     imagens: IMG.apto2,
     comodidades: ["Wi-Fi de alta velocidade", "Ar-condicionado", "Frigobar", "Smart TV", "Roupa de cama premium", "Cofre"],
     regras: ["Não é permitido fumar no interior do imóvel", "Check-in mediante combinação prévia", "Ambiente voltado para casais e adultos"],
+  },
+  {
+    id: 3,
+    tipo: "Resort",
+    nome: "Resorts",
+    regiao: "Litoral Norte, Bahia",
+    regiaoFiltro: "resorts",
+    descricaoCurta: "Resorts à beira-mar no Litoral Norte da Bahia.",
+    descricao:
+      "Uma opção de resort para quem quer descansar no Litoral Norte da Bahia, com praia, natureza e estrutura completa de lazer. Consulte nossa equipe para saber como incluir o resort no seu roteiro por Salvador e pela Bahia.",
+    imagens: IMG.resort,
+    comodidades: ["Hospedagem e reservas no resort", "Transporte até o resort", "Orientação para planejar sua estadia", "Sugestão de roteiro combinado com Salvador"],
   },
 ];
 
@@ -231,20 +243,6 @@ const experiencias = [
     inclui: ["Roteiro planejado conforme preferências informadas", "Flexibilidade de horários"],
     naoInclui: ["Alimentação e ingressos", "Transporte, salvo quando combinado"],
   },
-  {
-    id: 9,
-    nome: "Resorts",
-    categoria: "Resorts",
-    categoriaFiltro: "resorts",
-    duracao: "A combinar",
-    localSaida: "A combinar com o hóspede",
-    descricaoCurta: "Resorts à beira-mar no Litoral Norte da Bahia.",
-    descricao:
-      "Uma opção de resort para quem quer descansar no Litoral Norte da Bahia, com praia, natureza e estrutura completa de lazer. Consulte nossa equipe para saber como incluir o resort no seu roteiro por Salvador e pela Bahia.",
-    imagens: IMG.exp9,
-    inclui: ["Hospedagem e reservas no resort", "Transporte até o resort", "Orientação para planejar sua estadia", "Sugestão de roteiro combinado com Salvador"],
-    naoInclui: ["Despesas pessoais"],
-  },
 ];
 
 /* ---------------------------------------------------------
@@ -256,6 +254,7 @@ function abrirWhatsApp(mensagem) {
 }
 
 function mensagemApartamento(apto) {
+  if (apto.tipo === "Resort") return `Olá! Tenho interesse na opção de ${apto.nome} no Litoral Norte da Bahia. Gostaria de saber a disponibilidade e as condições de reserva.`;
   return `Olá! Tenho interesse no apartamento ${apto.nome}, em ${apto.regiao}. Gostaria de saber a disponibilidade, valores e condições de reserva.`;
 }
 

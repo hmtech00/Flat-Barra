@@ -118,7 +118,7 @@
     `).join("");
 
     const comodidades = apto.comodidades.map(c => `<li>${c}</li>`).join("");
-    const regras = apto.regras.map(r => `<li>${r}</li>`).join("");
+    const regras = (apto.regras || []).map(r => `<li>${r}</li>`).join("");
     const mensagem = mensagemApartamento(apto).replace(/'/g, "\\'");
 
     document.getElementById("conteudo-apartamento").innerHTML = `
@@ -138,10 +138,10 @@
               <span class="card-regiao">${apto.regiao}</span>
               <h1>${apto.nome}</h1>
               <div class="detalhe-meta">
-                <div class="detalhe-meta-item"><strong>${apto.hospedes}</strong>Hóspedes</div>
+                ${apto.hospedes ? `<div class="detalhe-meta-item"><strong>${apto.hospedes}</strong>Hóspedes</div>
                 <div class="detalhe-meta-item"><strong>${apto.quartos}</strong>Quartos</div>
                 <div class="detalhe-meta-item"><strong>${apto.camas}</strong>Camas</div>
-                <div class="detalhe-meta-item"><strong>${apto.banheiros}</strong>Banheiros</div>
+                <div class="detalhe-meta-item"><strong>${apto.banheiros}</strong>Banheiros</div>` : `<div class="detalhe-meta-item"><strong>${apto.tipo}</strong>Tipo de hospedagem</div>`}
               </div>
               <button class="btn btn-whatsapp btn-bloco" onclick="abrirWhatsApp('${mensagem}')" aria-label="Consultar disponibilidade de ${apto.nome} pelo WhatsApp">
                 Consultar no WhatsApp
@@ -153,17 +153,17 @@
           <div class="detalhe-corpo">
             <div>
               <div class="detalhe-bloco anim-surgir">
-                <h2>Sobre o apartamento</h2>
+                <h2>Sobre a hospedagem</h2>
                 <p>${apto.descricao}</p>
               </div>
               <div class="detalhe-bloco anim-surgir">
-                <h2>Comodidades</h2>
+                <h2>${apto.hospedes ? "Comodidades" : "O que está incluído"}</h2>
                 <ul class="lista-check">${comodidades}</ul>
               </div>
-              <div class="detalhe-bloco anim-surgir">
+              ${regras ? `<div class="detalhe-bloco anim-surgir">
                 <h2>Regras da casa</h2>
                 <ul class="lista-check">${regras}</ul>
-              </div>
+              </div>` : ""}
             </div>
             <div>
               <div class="detalhe-bloco anim-surgir">
