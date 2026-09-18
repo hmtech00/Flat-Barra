@@ -118,8 +118,8 @@
       <img src="${img}" alt="Foto ${i + 1} de ${exp.nome}" class="${i === 0 ? "miniatura-ativa" : ""}" onclick="trocarImagemPrincipalExp(${i})">
     `).join("") : "";
 
-    const inclui = exp.inclui.map(i => `<li>${i}</li>`).join("");
-    const naoInclui = exp.naoInclui.map(i => `<li>${i}</li>`).join("");
+    const inclui = (exp.inclui || []).map(i => `<li>${i}</li>`).join("");
+    const naoInclui = (exp.naoInclui || []).map(i => `<li>${i}</li>`).join("");
     const mensagem = mensagemExperiencia(exp).replace(/'/g, "\\'");
 
     document.getElementById("conteudo-experiencia").innerHTML = `
@@ -139,10 +139,10 @@
             <aside class="detalhe-info anim-surgir">
               <span class="card-regiao">${exp.categoria}</span>
               <h1>${exp.nome}</h1>
-              <div class="detalhe-meta">
-                <div class="detalhe-meta-item"><strong><img src="assets/images/icons/relogio.svg" alt="" class="icone-img"></strong>${exp.duracao}</div>
-                <div class="detalhe-meta-item"><strong><img src="assets/images/icons/local.svg" alt="" class="icone-img"></strong>${exp.localSaida}</div>
-              </div>
+              ${exp.duracao || exp.localSaida ? `<div class="detalhe-meta">
+                ${exp.duracao ? `<div class="detalhe-meta-item"><strong><img src="assets/images/icons/relogio.svg" alt="" class="icone-img"></strong>${exp.duracao}</div>` : ""}
+                ${exp.localSaida ? `<div class="detalhe-meta-item"><strong><img src="assets/images/icons/local.svg" alt="" class="icone-img"></strong>${exp.localSaida}</div>` : ""}
+              </div>` : ""}
               <button class="btn btn-whatsapp btn-bloco" onclick="abrirWhatsApp('${mensagem}')" aria-label="Consultar ${exp.nome} pelo WhatsApp">
                 Consultar pelo WhatsApp
               </button>
@@ -156,20 +156,20 @@
                 <h2>Sobre a experiência</h2>
                 <p>${exp.descricao}</p>
               </div>
-              <div class="detalhe-bloco anim-surgir">
+              ${inclui ? `<div class="detalhe-bloco anim-surgir">
                 <h2>O que está incluído</h2>
                 <ul class="lista-check">${inclui}</ul>
-              </div>
-              <div class="detalhe-bloco anim-surgir">
+              </div>` : ""}
+              ${naoInclui ? `<div class="detalhe-bloco anim-surgir">
                 <h2>O que não está incluído</h2>
                 <ul class="lista-x">${naoInclui}</ul>
-              </div>
+              </div>` : ""}
             </div>
             <div>
               <div class="detalhe-bloco anim-surgir">
                 <h2>Informações importantes</h2>
                 <div class="aviso-caixa">
-                  Esta experiência é apresentada de forma demonstrativa. Datas e condições devem ser confirmados diretamente com nossa equipe pelo WhatsApp.
+                  Datas, horários e condições devem ser confirmados diretamente com nossa equipe pelo WhatsApp.
                 </div>
               </div>
             </div>

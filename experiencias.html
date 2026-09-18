@@ -48,8 +48,6 @@
         <button class="filtro-btn filtro-ativo" data-filtro="todos">Todos</button>
         <button class="filtro-btn" data-filtro="cultura">Cultura e história</button>
         <button class="filtro-btn" data-filtro="mar">Mar e natureza</button>
-        <button class="filtro-btn" data-filtro="gastronomia">Gastronomia</button>
-        <button class="filtro-btn" data-filtro="servicos">Serviços</button>
       </div>
 
       <div class="grade" id="grade-experiencias"></div>
@@ -108,9 +106,6 @@
         </a>
         <div class="card-corpo">
           <h3><a href="experiencia.html?id=${exp.id}">${exp.nome}</a></h3>
-          <div class="card-meta">
-            <span><img src="assets/images/icons/relogio.svg" alt="" class="icone-img"> ${exp.duracao}</span>
-          </div>
           <p class="card-descricao">${exp.descricaoCurta}</p>
           <div class="card-acoes">
             <a href="experiencia.html?id=${exp.id}" class="btn btn-secundario btn-sm">Ver detalhes</a>
