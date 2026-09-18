@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Experiências e Passeios em Salvador | Bahia Stay</title>
-<meta name="description" content="Descubra passeios turísticos, cultura, natureza e gastronomia em Salvador, Bahia. Consulte disponibilidade e valores pelo WhatsApp.">
+<meta name="description" content="Descubra passeios turísticos, cultura, natureza e gastronomia em Salvador, Bahia. Consulte disponibilidade pelo WhatsApp.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div class="container">
       <span class="etiqueta" style="color:var(--cor-terracota); text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; font-weight:700;">Turismo em Salvador</span>
       <h1>Experiências e serviços</h1>
-      <p>Cultura, mar, gastronomia e serviços pensados para você viver Salvador de forma completa. Preços e horários são sob consulta, confirmados diretamente pelo WhatsApp.</p>
+      <p>Cultura, mar, gastronomia e serviços pensados para você viver Salvador de forma completa. Horários e disponibilidade são confirmados diretamente pelo WhatsApp.</p>
     </div>
   </section>
 
@@ -112,7 +112,6 @@
             <span>⏱️ ${exp.duracao}</span>
           </div>
           <p class="card-descricao">${exp.descricaoCurta}</p>
-          <p class="card-preco">${exp.preco}</p>
           <div class="card-acoes">
             <a href="experiencia.html?id=${exp.id}" class="btn btn-secundario btn-sm">Ver detalhes</a>
             <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemExperiencia(experiencias.find(e => e.id === ${exp.id})))" aria-label="Consultar ${exp.nome} pelo WhatsApp">WhatsApp</button>

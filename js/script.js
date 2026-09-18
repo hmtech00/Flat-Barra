@@ -75,7 +75,7 @@ const IMG = {
 /* ---------------------------------------------------------
    3. DADOS DE DEMONSTRAÇÃO — APARTAMENTOS
    Edite, adicione ou remova itens deste array conforme
-   necessário. Preços e disponibilidade são apenas ilustrativos.
+   necessário. Conteúdo apenas ilustrativo.
    --------------------------------------------------------- */
 const apartamentos = [
   {
@@ -123,7 +123,6 @@ const experiencias = [
     nome: "Salvador Histórica",
     categoria: "Cultura e história",
     categoriaFiltro: "cultura",
-    preco: "Sob consulta",
     duracao: "Aproximadamente 4 horas",
     localSaida: "A combinar com o hóspede",
     descricaoCurta: "Uma imersão na história, arquitetura e cultura da cidade mais antiga do Brasil.",
@@ -138,7 +137,6 @@ const experiencias = [
     nome: "Pelourinho e Centro Histórico",
     categoria: "Cultura e história",
     categoriaFiltro: "cultura",
-    preco: "Sob consulta",
     duracao: "Aproximadamente 3 horas",
     localSaida: "Largo do Pelourinho",
     descricaoCurta: "Ladeiras coloridas, música e arte no coração histórico de Salvador.",
@@ -153,7 +151,6 @@ const experiencias = [
     nome: "Passeio de Barco pela Baía de Todos-os-Santos",
     categoria: "Mar e natureza",
     categoriaFiltro: "mar",
-    preco: "Sob consulta",
     duracao: "Dia inteiro (aproximadamente 8 horas)",
     localSaida: "Marina próxima ao Porto da Barra",
     descricaoCurta: "Ilhas, águas calmas e paisagens deslumbrantes na segunda maior baía do Brasil.",
@@ -168,7 +165,6 @@ const experiencias = [
     nome: "Pôr do Sol no Farol da Barra",
     categoria: "Mar e natureza",
     categoriaFiltro: "mar",
-    preco: "Sob consulta",
     duracao: "Aproximadamente 2 horas",
     localSaida: "Farol da Barra",
     descricaoCurta: "Um dos pores do sol mais celebrados do Brasil, à beira do Atlântico.",
@@ -183,7 +179,6 @@ const experiencias = [
     nome: "Experiência de Culinária Baiana",
     categoria: "Gastronomia",
     categoriaFiltro: "gastronomia",
-    preco: "Sob consulta",
     duracao: "Aproximadamente 3 horas",
     localSaida: "A combinar com o hóspede",
     descricaoCurta: "Sabores autênticos da Bahia em uma jornada pelos temperos locais.",
@@ -198,7 +193,6 @@ const experiencias = [
     nome: "Roteiro pelas Praias de Salvador",
     categoria: "Mar e natureza",
     categoriaFiltro: "mar",
-    preco: "Sob consulta",
     duracao: "Dia inteiro",
     localSaida: "A combinar com o hóspede",
     descricaoCurta: "Da Barra a Itapuã, um roteiro pelas praias mais bonitas da cidade.",
@@ -213,7 +207,6 @@ const experiencias = [
     nome: "Transfer Aeroporto",
     categoria: "Serviços",
     categoriaFiltro: "servicos",
-    preco: "Sob consulta",
     duracao: "Conforme trajeto",
     localSaida: "Aeroporto Internacional de Salvador ou endereço de hospedagem",
     descricaoCurta: "Chegada e saída tranquilas, com transporte direto até o seu apartamento.",
@@ -228,7 +221,6 @@ const experiencias = [
     nome: "Passeio Personalizado",
     categoria: "Serviços",
     categoriaFiltro: "servicos",
-    preco: "Sob consulta",
     duracao: "A combinar",
     localSaida: "A combinar com o hóspede",
     descricaoCurta: "Um roteiro sob medida, de acordo com o que você deseja viver em Salvador.",
