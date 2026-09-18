@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="titulo-pagina">Experiência | Bahia Stay</title>
 <meta name="description" id="meta-descricao" content="Detalhes de passeios e experiências turísticas em Salvador, Bahia.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
+<link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -66,7 +66,7 @@
         <ul class="footer-links">
           <li><a href="mailto:contato@bahiastay.com.br" data-marca-email>contato@bahiastay.com.br</a></li>
           <li><a href="#" data-marca-instagram>@bahiastay</a></li>
-          <li><span data-marca-localizacao>Salvador, Bahia — Brasil</span></li>
+          <li><span data-marca-localizacao>Salvador, Bahia, Brasil</span></li>
         </ul>
       </div>
     </div>
@@ -111,7 +111,7 @@
   function renderizarExperiencia(exp) {
     experienciaAtual = exp;
     document.title = `${exp.nome} | Bahia Stay`;
-    document.getElementById("meta-descricao").setAttribute("content", `${exp.nome} — ${exp.descricaoCurta}`);
+    document.getElementById("meta-descricao").setAttribute("content", `${exp.nome}: ${exp.descricaoCurta}`);
 
     const temMultiplasImagens = exp.imagens.length > 1;
     const miniaturas = temMultiplasImagens ? exp.imagens.map((img, i) => `
@@ -140,8 +140,8 @@
               <span class="card-regiao">${exp.categoria}</span>
               <h1>${exp.nome}</h1>
               <div class="detalhe-meta">
-                <div class="detalhe-meta-item"><strong>⏱️</strong>${exp.duracao}</div>
-                <div class="detalhe-meta-item"><strong>📍</strong>${exp.localSaida}</div>
+                <div class="detalhe-meta-item"><strong><img src="assets/images/icons/relogio.svg" alt="" class="icone-img"></strong>${exp.duracao}</div>
+                <div class="detalhe-meta-item"><strong><img src="assets/images/icons/local.svg" alt="" class="icone-img"></strong>${exp.localSaida}</div>
               </div>
               <button class="btn btn-whatsapp btn-bloco" onclick="abrirWhatsApp('${mensagem}')" aria-label="Consultar ${exp.nome} pelo WhatsApp">
                 Consultar pelo WhatsApp

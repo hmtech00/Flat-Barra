@@ -13,7 +13,7 @@ const SITE_CONFIG = {
   email: "contato@bahiastay.com.br", // <-- ALTERE: e-mail de contato
   instagram: "https://instagram.com/bahiastay", // <-- ALTERE: link do Instagram
   instagramHandle: "@bahiastay",
-  localizacao: "Salvador, Bahia — Brasil",
+  localizacao: "Salvador, Bahia, Brasil",
   horarioAtendimento: "Todos os dias, das 8h às 22h",
 };
 
