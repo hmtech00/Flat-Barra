@@ -242,8 +242,8 @@ const experiencias = [
     descricao:
       "Uma opção de resort para quem quer descansar no Litoral Norte da Bahia, com praia, natureza e estrutura completa de lazer. Consulte nossa equipe para saber como incluir o resort no seu roteiro por Salvador e pela Bahia.",
     imagens: IMG.exp9,
-    inclui: ["Orientação para planejar sua estadia no resort", "Sugestão de roteiro combinado com Salvador"],
-    naoInclui: ["Hospedagem e reservas no resort", "Transporte até o resort", "Despesas pessoais"],
+    inclui: ["Hospedagem e reservas no resort", "Transporte até o resort", "Orientação para planejar sua estadia", "Sugestão de roteiro combinado com Salvador"],
+    naoInclui: ["Despesas pessoais"],
   },
 ];
 
