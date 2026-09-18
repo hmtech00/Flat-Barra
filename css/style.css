@@ -908,3 +908,6 @@ select:focus-visible {
 .servico-icone .icone-img { width: 28px; height: 28px; margin: 0; vertical-align: middle; }
 .detalhe-meta-item strong .icone-img { width: 22px; height: 22px; margin: 0; }
 .card-meta span { display: inline-flex; align-items: center; }
+
+.creditos-link { color: var(--cor-areia); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.creditos-link:hover { color: var(--cor-branco); }
