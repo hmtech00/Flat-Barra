@@ -238,12 +238,12 @@ const experiencias = [
     categoriaFiltro: "resorts",
     duracao: "A combinar",
     localSaida: "A combinar com o hóspede",
-    descricaoCurta: "Resort à beira-mar no Litoral Norte da Bahia, em Imbassaí.",
+    descricaoCurta: "Resorts à beira-mar no Litoral Norte da Bahia.",
     descricao:
-      "Uma opção de resort para quem quer descansar no Litoral Norte da Bahia, na região de Imbassaí, com praia, natureza e estrutura completa de lazer. Consulte nossa equipe para saber como incluir o resort no seu roteiro por Salvador e pela Bahia.",
+      "Uma opção de resort para quem quer descansar no Litoral Norte da Bahia, com praia, natureza e estrutura completa de lazer. Consulte nossa equipe para saber como incluir o resort no seu roteiro por Salvador e pela Bahia.",
     imagens: IMG.exp9,
     inclui: ["Orientação para planejar sua estadia no resort", "Sugestão de roteiro combinado com Salvador"],
-    naoInclui: ["Hospedagem e reservas no resort", "Transporte até Imbassaí", "Despesas pessoais"],
+    naoInclui: ["Hospedagem e reservas no resort", "Transporte até o resort", "Despesas pessoais"],
   },
 ];
 
