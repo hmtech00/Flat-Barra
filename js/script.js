@@ -27,8 +27,8 @@ const WHATSAPP_NUMBER = SITE_CONFIG.whatsappNumero;
    mar, arquitetura histórica e gastronomia.
    --------------------------------------------------------- */
 const IMG = {
-  heroHome: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Salvador-Brazil-Farol-da-Barra-sunset.jpg/1920px-Salvador-Brazil-Farol-da-Barra-sunset.jpg",
-  institucional: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Largo_do_Pelourinho_Salvador_2019-9754_%28cropped%29.jpg/1600px-Largo_do_Pelourinho_Salvador_2019-9754_%28cropped%29.jpg",
+  heroHome: "assets/images/salvador/Salvador-Brazil-Farol-da-Barra-sunset.jpg",
+  institucional: "assets/images/salvador/Largo_do_Pelourinho_Salvador_2019-9754__cropped_.jpg",
   ctaFinal: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1600&q=80",
 
   apto1: [
@@ -62,15 +62,15 @@ const IMG = {
     "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
   ],
 
-  exp1: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Pelourinho_Salvador_Bahia_2018-0601.jpg/1280px-Pelourinho_Salvador_Bahia_2018-0601.jpg"],
-  exp2: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Largo_do_Pelourinho%2C_Salvador_20150719-DSC05452.JPG/1280px-Largo_do_Pelourinho%2C_Salvador_20150719-DSC05452.JPG"],
-  exp3: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Barco_na_Baia_de_Todos_os_Santos.jpg/1280px-Barco_na_Baia_de_Todos_os_Santos.jpg"],
-  exp4: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Salvador-Brazil-Farol-da-Barra-sunset.jpg/1920px-Salvador-Brazil-Farol-da-Barra-sunset.jpg"],
-  exp5: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/AKARA.jpg/1280px-AKARA.jpg"],
-  exp6: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Praia_do_Porto_da_Barra_%28Salvador%29.jpg/1280px-Praia_do_Porto_da_Barra_%28Salvador%29.jpg"],
-  exp7: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fachada_Aeroporto_de_Salvador2.jpg/1280px-Fachada_Aeroporto_de_Salvador2.jpg"],
-  resort: ["https://upload.wikimedia.org/wikipedia/commons/9/97/Arembepe_Praia.jpg"],
-  exp8: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg/1280px-Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg"],
+  exp1: ["assets/images/salvador/Pelourinho_Salvador_Bahia_2018-0601.jpg"],
+  exp2: ["assets/images/salvador/Largo_do_Pelourinho__Salvador_20150719-DSC05452.JPG"],
+  exp3: ["assets/images/salvador/Barco_na_Baia_de_Todos_os_Santos.jpg"],
+  exp4: ["assets/images/salvador/Salvador-Brazil-Farol-da-Barra-sunset.jpg"],
+  exp5: ["assets/images/salvador/AKARA.jpg"],
+  exp6: ["assets/images/salvador/Praia_do_Porto_da_Barra__Salvador_.jpg"],
+  exp7: ["assets/images/salvador/Fachada_Aeroporto_de_Salvador2.jpg"],
+  resort: ["assets/images/salvador/Arembepe_Praia.jpg"],
+  exp8: ["assets/images/salvador/Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg"],
 };
 
 /* ---------------------------------------------------------
