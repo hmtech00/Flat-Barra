@@ -233,7 +233,7 @@ const experiencias = [
   },
   {
     id: 9,
-    nome: "Grand Palladium Imbassaí",
+    nome: "Resorts",
     categoria: "Resorts",
     categoriaFiltro: "resorts",
     duracao: "A combinar",
