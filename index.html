@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahia Stay | Apartamentos e Experiências em Salvador, Bahia</title>
+<meta name="description" content="Apartamentos acolhedores e experiências inesquecíveis em Salvador, Bahia. Hospedagem por temporada, passeios turísticos e serviços para sua viagem.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-conteudo">
+    <a href="index.html" class="logo">Bahia <span>Stay</span></a>
+    <nav class="nav-principal" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="apartamentos.html">Apartamentos</a></li>
+        <li><a href="experiencias.html">Experiências</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-acoes">
+      <a href="contato.html" class="btn btn-primario">Fale conosco</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="background-image:url('https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Salvador-Brazil-Farol-da-Barra-sunset.jpg/1920px-Salvador-Brazil-Farol-da-Barra-sunset.jpg');">
+    <div class="hero-conteudo">
+      <h1>Viva Salvador do seu jeito.</h1>
+      <p>Apartamentos acolhedores e experiências inesquecíveis para descobrir a beleza, a cultura e os sabores da Bahia.</p>
+      <div class="hero-botoes">
+        <a href="apartamentos.html" class="btn btn-claro">Explorar apartamentos</a>
+        <a href="experiencias.html" class="btn btn-secundario" style="border-color:#fff;color:#fff;">Descobrir experiências</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APARTAMENTOS EM DESTAQUE -->
+  <section id="apartamentos-destaque">
+    <div class="container">
+      <div class="secao-titulo anim-surgir">
+        <span class="etiqueta">Hospedagem</span>
+        <h2>Apartamentos em destaque</h2>
+        <p>Acomodações selecionadas para tornar sua estadia em Salvador confortável, prática e cheia de charme baiano.</p>
+      </div>
+      <div class="grade" id="grade-destaque"></div>
+      <div class="texto-centro" style="margin-top:40px;">
+        <a href="apartamentos.html" class="btn btn-secundario">Ver todos os apartamentos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIAS -->
+  <section class="fundo-branco" id="experiencias-destaque">
+    <div class="container">
+      <div class="secao-titulo anim-surgir">
+        <span class="etiqueta">Turismo</span>
+        <h2>Descubra Salvador</h2>
+        <p>Roteiros e passeios para viver a história, a natureza e a cultura da capital baiana com quem entende do assunto.</p>
+      </div>
+      <div class="grade" id="grade-experiencias-home"></div>
+      <div class="texto-centro" style="margin-top:40px;">
+        <a href="experiencias.html" class="btn btn-secundario">Ver todas as experiências</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="container">
+      <div class="secao-titulo anim-surgir">
+        <span class="etiqueta">Comodidade</span>
+        <h2>Serviços para sua estadia</h2>
+        <p>Cuidamos dos detalhes para que sua experiência em Salvador seja tranquila do início ao fim.</p>
+      </div>
+      <div class="grade">
+        <div class="servico-card anim-surgir">
+          <div class="servico-icone">✈️</div>
+          <h3>Transfer aeroporto</h3>
+          <p>Chegada e saída tranquilas, com transporte direto até o seu apartamento.</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemServico('Transfer aeroporto'))" aria-label="Consultar transfer aeroporto pelo WhatsApp">Consultar</button>
+        </div>
+        <div class="servico-card anim-surgir">
+          <div class="servico-icone">🚗</div>
+          <h3>Transporte privativo</h3>
+          <p>Deslocamentos com conforto e privacidade durante toda a sua viagem.</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemServico('Transporte privativo'))" aria-label="Consultar transporte privativo pelo WhatsApp">Consultar</button>
+        </div>
+        <div class="servico-card anim-surgir">
+          <div class="servico-icone">🗺️</div>
+          <h3>Passeios personalizados</h3>
+          <p>Roteiros sob medida, de acordo com o seu tempo e interesses em Salvador.</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemServico('Passeios personalizados'))" aria-label="Consultar passeios personalizados pelo WhatsApp">Consultar</button>
+        </div>
+        <div class="servico-card anim-surgir">
+          <div class="servico-icone">🛎️</div>
+          <h3>Concierge / assistência</h3>
+          <p>Suporte próximo durante toda a estadia, para que nada saia do planejado.</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemServico('Concierge e assistência ao hóspede'))" aria-label="Consultar concierge pelo WhatsApp">Consultar</button>
+        </div>
+        <div class="servico-card anim-surgir">
+          <div class="servico-icone">🍽️</div>
+          <h3>Indicação de restaurantes</h3>
+          <p>Sugestões selecionadas para você viver a gastronomia baiana como um local.</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemServico('Indicação de restaurantes'))" aria-label="Consultar indicação de restaurantes pelo WhatsApp">Consultar</button>
+        </div>
+        <div class="servico-card anim-surgir">
+          <div class="servico-icone">🥘</div>
+          <h3>Experiências gastronômicas</h3>
+          <p>Roteiros para descobrir os sabores mais autênticos da culinária da Bahia.</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemServico('Experiências gastronômicas'))" aria-label="Consultar experiências gastronômicas pelo WhatsApp">Consultar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTITUCIONAL -->
+  <section class="fundo-branco">
+    <div class="container">
+      <div class="institucional">
+        <div class="institucional-texto anim-surgir">
+          <span class="etiqueta">Nossa essência</span>
+          <h2>Mais do que uma hospedagem</h2>
+          <p>Queremos proporcionar uma experiência especial em Salvador. Selecionamos acomodações confortáveis e experiências que conectam você à cultura, à história e à beleza da Bahia.</p>
+          <p>Cada apartamento é escolhido com atenção aos detalhes, e cada passeio é pensado para revelar o melhor da cidade — do Pelourinho às praias, da culinária baiana ao pôr do sol na Barra.</p>
+          <a href="contato.html" class="btn btn-primario">Fale com a gente</a>
+        </div>
+        <div class="institucional-imagem anim-surgir">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Largo_do_Pelourinho_Salvador_2019-9754_%28cropped%29.jpg/1600px-Largo_do_Pelourinho_Salvador_2019-9754_%28cropped%29.jpg" alt="Vista de casarios coloridos e arquitetura histórica de Salvador, Bahia">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section>
+    <div class="container">
+      <div class="cta-final anim-surgir" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1600&q=80');">
+        <h2>Planeje sua experiência em Salvador.</h2>
+        <p>Fale com a gente e descubra o apartamento e os passeios ideais para a sua viagem à Bahia.</p>
+        <a href="contato.html" class="btn btn-claro">Falar com um especialista</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grade">
+      <div>
+        <a href="index.html" class="logo">Bahia <span>Stay</span></a>
+        <p style="margin-top:14px;">Apartamentos acolhedores e experiências autênticas para viver Salvador com conforto e praticidade.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/5571999999999" data-marca-whatsapp target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.6 4.44 1.73 6.37L3.2 28.8l6.58-1.7a12.74 12.74 0 0 0 6.22 1.6h.01c7.07 0 12.8-5.73 12.8-12.8s-5.73-12.7-12.81-12.7zm0 23.24h-.01a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.9 1.01 1.04-3.8-.25-.39a10.42 10.42 0 0 1-1.6-5.59c0-5.76 4.69-10.44 10.45-10.44 2.79 0 5.41 1.09 7.39 3.06a10.36 10.36 0 0 1 3.06 7.38c0 5.76-4.69 10.44-10.5 10.44z"/></svg>
+          </a>
+          <a href="#" data-marca-instagram aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.25.07 1.6.07 4.81 0 3.22-.01 3.56-.07 4.81-.15 3.23-1.66 4.77-4.92 4.92-1.25.06-1.6.07-4.85.07-3.2 0-3.6 0-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92-.06-1.25-.07-1.6-.07-4.81 0-3.22.01-3.56.07-4.81.15-3.23 1.66-4.77 4.92-4.92C8.4 2.21 8.8 2.2 12 2.2zm0 5.4a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8zm0 7.26a2.86 2.86 0 1 1 0-5.72 2.86 2.86 0 0 1 0 5.72zm5.6-7.44a1.03 1.03 0 1 1-2.06 0 1.03 1.03 0 0 1 2.06 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="apartamentos.html">Apartamentos</a></li>
+          <li><a href="experiencias.html">Experiências</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:contato@bahiastay.com.br" data-marca-email>contato@bahiastay.com.br</a></li>
+          <li><a href="#" data-marca-instagram>@bahiastay</a></li>
+          <li><span data-marca-localizacao>Salvador, Bahia — Brasil</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span class="ano-atual">2026</span> <span data-marca-nome>Bahia Stay</span>. Todos os direitos reservados.</span>
+      <span>Feito com carinho para quem ama a Bahia.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  function criarCardApartamento(apto) {
+    return `
+      <article class="card anim-surgir">
+        <a href="apartamento.html?id=${apto.id}" class="card-imagem" aria-label="Ver detalhes de ${apto.nome}">
+          <img src="${apto.imagens[0]}" alt="Interior do ${apto.nome}, em ${apto.regiao}" loading="lazy">
+          <span class="card-selo">${apto.hospedes} hóspedes</span>
+        </a>
+        <div class="card-corpo">
+          <span class="card-regiao">${apto.regiao}</span>
+          <h3><a href="apartamento.html?id=${apto.id}">${apto.nome}</a></h3>
+          <p class="card-descricao">${apto.descricaoCurta}</p>
+          <p class="card-preco">${apto.preco}</p>
+          <div class="card-acoes">
+            <a href="apartamento.html?id=${apto.id}" class="btn btn-secundario btn-sm">Ver apartamento</a>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function criarCardExperienciaHome(exp) {
+    return `
+      <article class="card anim-surgir">
+        <a href="experiencia.html?id=${exp.id}" class="card-imagem" aria-label="Ver detalhes de ${exp.nome}">
+          <img src="${exp.imagens[0]}" alt="${exp.nome} em Salvador, Bahia" loading="lazy">
+          <span class="card-selo">${exp.categoria}</span>
+        </a>
+        <div class="card-corpo">
+          <h3>${exp.nome}</h3>
+          <p class="card-descricao">${exp.descricaoCurta}</p>
+          <div class="card-acoes">
+            <a href="experiencia.html?id=${exp.id}" class="btn btn-secundario btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("grade-destaque").innerHTML = apartamentos.slice(0, 4).map(criarCardApartamento).join("");
+    document.getElementById("grade-experiencias-home").innerHTML = experiencias.slice(0, 3).map(criarCardExperienciaHome).join("");
+    inicializarAnimacoesScroll();
+  });
+</script>
+</body>
+</html>

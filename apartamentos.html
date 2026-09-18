@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartamentos em Salvador | Bahia Stay</title>
+<meta name="description" content="Conheça nossos apartamentos para aluguel por temporada em Salvador: Barra, Rio Vermelho, Vitória e Itapuã. Consulte disponibilidade pelo WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-conteudo">
+    <a href="index.html" class="logo">Bahia <span>Stay</span></a>
+    <nav class="nav-principal" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="apartamentos.html">Apartamentos</a></li>
+        <li><a href="experiencias.html">Experiências</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-acoes">
+      <a href="contato.html" class="btn btn-primario">Fale conosco</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-interno">
+    <div class="container">
+      <span class="etiqueta" style="color:var(--cor-terracota); text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; font-weight:700;">Hospedagem em Salvador</span>
+      <h1>Nossos apartamentos</h1>
+      <p>Selecionamos acomodações confortáveis em diferentes regiões de Salvador para tornar sua estadia prática, segura e cheia de charme. Todos os valores e disponibilidade devem ser confirmados diretamente pelo WhatsApp.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="filtros" role="group" aria-label="Filtrar apartamentos por região">
+        <button class="filtro-btn filtro-ativo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="barra">Barra</button>
+        <button class="filtro-btn" data-filtro="rio-vermelho">Rio Vermelho</button>
+        <button class="filtro-btn" data-filtro="vitoria">Vitória</button>
+        <button class="filtro-btn" data-filtro="itapua">Itapuã</button>
+      </div>
+
+      <div class="grade" id="grade-apartamentos"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grade">
+      <div>
+        <a href="index.html" class="logo">Bahia <span>Stay</span></a>
+        <p style="margin-top:14px;">Apartamentos acolhedores e experiências autênticas para viver Salvador com conforto e praticidade.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/5571999999999" data-marca-whatsapp target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.6 4.44 1.73 6.37L3.2 28.8l6.58-1.7a12.74 12.74 0 0 0 6.22 1.6h.01c7.07 0 12.8-5.73 12.8-12.8s-5.73-12.7-12.81-12.7zm0 23.24h-.01a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.9 1.01 1.04-3.8-.25-.39a10.42 10.42 0 0 1-1.6-5.59c0-5.76 4.69-10.44 10.45-10.44 2.79 0 5.41 1.09 7.39 3.06a10.36 10.36 0 0 1 3.06 7.38c0 5.76-4.69 10.44-10.5 10.44z"/></svg>
+          </a>
+          <a href="#" data-marca-instagram aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.25.07 1.6.07 4.81 0 3.22-.01 3.56-.07 4.81-.15 3.23-1.66 4.77-4.92 4.92-1.25.06-1.6.07-4.85.07-3.2 0-3.6 0-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92-.06-1.25-.07-1.6-.07-4.81 0-3.22.01-3.56.07-4.81.15-3.23 1.66-4.77 4.92-4.92C8.4 2.21 8.8 2.2 12 2.2zm0 5.4a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8zm0 7.26a2.86 2.86 0 1 1 0-5.72 2.86 2.86 0 0 1 0 5.72zm5.6-7.44a1.03 1.03 0 1 1-2.06 0 1.03 1.03 0 0 1 2.06 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="apartamentos.html">Apartamentos</a></li>
+          <li><a href="experiencias.html">Experiências</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:contato@bahiastay.com.br" data-marca-email>contato@bahiastay.com.br</a></li>
+          <li><a href="#" data-marca-instagram>@bahiastay</a></li>
+          <li><span data-marca-localizacao>Salvador, Bahia — Brasil</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span class="ano-atual">2026</span> <span data-marca-nome>Bahia Stay</span>. Todos os direitos reservados.</span>
+      <span>Feito com carinho para quem ama a Bahia.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  function criarCardApartamentoCompleto(apto) {
+    return `
+      <article class="card anim-surgir" data-regiao="${apto.regiaoFiltro}">
+        <a href="apartamento.html?id=${apto.id}" class="card-imagem" aria-label="Ver detalhes de ${apto.nome}">
+          <img src="${apto.imagens[0]}" alt="Interior do ${apto.nome}, em ${apto.regiao}" loading="lazy">
+          <span class="card-selo">${apto.hospedes} hóspedes</span>
+        </a>
+        <div class="card-corpo">
+          <span class="card-regiao">${apto.regiao}</span>
+          <h3><a href="apartamento.html?id=${apto.id}">${apto.nome}</a></h3>
+          <div class="card-meta">
+            <span>🛏️ ${apto.quartos} quarto(s)</span>
+            <span>🚿 ${apto.banheiros} banheiro(s)</span>
+          </div>
+          <p class="card-descricao">${apto.descricaoCurta}</p>
+          <p class="card-preco">${apto.preco}</p>
+          <div class="card-acoes">
+            <a href="apartamento.html?id=${apto.id}" class="btn btn-secundario btn-sm">Ver detalhes</a>
+            <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemApartamento(apartamentos.find(a => a.id === ${apto.id})))" aria-label="Consultar ${apto.nome} pelo WhatsApp">WhatsApp</button>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function renderizarApartamentos(filtro) {
+    const grade = document.getElementById("grade-apartamentos");
+    const lista = filtro === "todos" ? apartamentos : apartamentos.filter(a => a.regiaoFiltro === filtro);
+    grade.innerHTML = lista.length
+      ? lista.map(criarCardApartamentoCompleto).join("")
+      : `<p class="texto-centro" style="grid-column:1/-1;">Nenhum apartamento encontrado para este filtro no momento.</p>`;
+    inicializarAnimacoesScroll();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    renderizarApartamentos("todos");
+
+    document.querySelectorAll(".filtro-btn").forEach(botao => {
+      botao.addEventListener("click", () => {
+        document.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("filtro-ativo"));
+        botao.classList.add("filtro-ativo");
+        renderizarApartamentos(botao.dataset.filtro);
+      });
+    });
+  });
+</script>
+</body>
+</html>
