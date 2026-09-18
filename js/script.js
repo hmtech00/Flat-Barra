@@ -69,7 +69,7 @@ const IMG = {
   exp5: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/AKARA.jpg/1280px-AKARA.jpg"],
   exp6: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Praia_do_Porto_da_Barra_%28Salvador%29.jpg/1280px-Praia_do_Porto_da_Barra_%28Salvador%29.jpg"],
   exp7: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fachada_Aeroporto_de_Salvador2.jpg/1280px-Fachada_Aeroporto_de_Salvador2.jpg"],
-  exp9: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Imbassa%C3%AD_beach.jpg/1280px-Imbassa%C3%AD_beach.jpg"],
+  exp9: ["https://upload.wikimedia.org/wikipedia/commons/9/97/Arembepe_Praia.jpg"],
   exp8: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg/1280px-Elevador_Lacerda_Salvador_Bahia_2019-0359.jpg"],
 };
 
