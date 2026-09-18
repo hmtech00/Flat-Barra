@@ -107,7 +107,6 @@
             <span>🚿 ${apto.banheiros} banheiro(s)</span>
           </div>
           <p class="card-descricao">${apto.descricaoCurta}</p>
-          <p class="card-preco">${apto.preco}</p>
           <div class="card-acoes">
             <a href="apartamento.html?id=${apto.id}" class="btn btn-secundario btn-sm">Ver detalhes</a>
             <button class="btn btn-whatsapp btn-sm" onclick="abrirWhatsApp(mensagemApartamento(apartamentos.find(a => a.id === ${apto.id})))" aria-label="Consultar ${apto.nome} pelo WhatsApp">WhatsApp</button>
