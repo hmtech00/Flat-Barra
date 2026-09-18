@@ -158,10 +158,18 @@ select:focus-visible {
   position: sticky;
   top: 0;
   z-index: 200;
+  border-bottom: 1px solid transparent;
+  transition: box-shadow var(--transicao), border-color var(--transicao);
+}
+
+/* O desfoque fica no pseudo-elemento: backdrop-filter no próprio header prenderia o menu mobile (position: fixed) dentro dele */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background-color: rgba(250, 248, 243, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid transparent;
-  transition: box-shadow var(--transicao), border-color var(--transicao), background-color var(--transicao);
 }
 
 .header--rolado {
@@ -911,3 +919,5 @@ select:focus-visible {
 
 .creditos-link { color: var(--cor-areia); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .creditos-link:hover { color: var(--cor-branco); }
+
+.detalhe-topo > *, .detalhe-corpo > * { min-width: 0; }
