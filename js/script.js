@@ -61,16 +61,6 @@ const IMG = {
     "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
   ],
-  apto3: [
-    "https://images.unsplash.com/photo-1502672023488-70e25813eb80?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
-  ],
-  apto4: [
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80",
-  ],
 
   exp1: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Pelourinho_Salvador_Bahia_2018-0601.jpg/1280px-Pelourinho_Salvador_Bahia_2018-0601.jpg"],
   exp2: ["https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Largo_do_Pelourinho%2C_Salvador_20150719-DSC05452.JPG/1280px-Largo_do_Pelourinho%2C_Salvador_20150719-DSC05452.JPG"],
@@ -123,40 +113,6 @@ const apartamentos = [
     imagens: IMG.apto2,
     comodidades: ["Wi-Fi de alta velocidade", "Ar-condicionado", "Frigobar", "Smart TV", "Roupa de cama premium", "Cofre"],
     regras: ["Não é permitido fumar no interior do imóvel", "Check-in mediante combinação prévia", "Ambiente voltado para casais e adultos"],
-  },
-  {
-    id: 3,
-    nome: "Apartamento Vista Baía",
-    regiao: "Vitória, Salvador",
-    regiaoFiltro: "vitoria",
-    preco: "A partir de R$ 410 / noite",
-    hospedes: 5,
-    quartos: 3,
-    camas: 4,
-    banheiros: 2,
-    descricaoCurta: "Amplo apartamento com vista panorâmica para a Baía de Todos-os-Santos.",
-    descricao:
-      "Localizado em um dos bairros mais nobres de Salvador, este apartamento oferece vista privilegiada para a Baía de Todos-os-Santos. Espaços amplos e bem distribuídos tornam a estadia ideal para famílias e grupos de amigos que buscam conforto, praticidade e uma localização central, próxima ao Corredor da Vitória.",
-    imagens: IMG.apto3,
-    comodidades: ["Wi-Fi de alta velocidade", "Ar-condicionado em todos os quartos", "Cozinha completa", "Varanda gourmet", "Vaga de garagem", "Portaria 24h"],
-    regras: ["Não é permitido fumar no interior do imóvel", "Máximo de 5 hóspedes", "Eventos e festas não são permitidos"],
-  },
-  {
-    id: 4,
-    nome: "Casa Solar de Itapuã",
-    regiao: "Itapuã, Salvador",
-    regiaoFiltro: "itapua",
-    preco: "A partir de R$ 350 / noite",
-    hospedes: 6,
-    quartos: 3,
-    camas: 4,
-    banheiros: 2,
-    descricaoCurta: "Casa espaçosa perto das praias e lagoas de Itapuã, ideal para grupos.",
-    descricao:
-      "Uma casa cheia de charme para quem quer aproveitar as praias e lagoas de Itapuã com conforto e liberdade. Ambientes integrados, área externa arborizada e clima tranquilo, longe da agitação do centro, mas perto de tudo o que há de mais autêntico na Salvador litorânea.",
-    imagens: IMG.apto4,
-    comodidades: ["Wi-Fi de alta velocidade", "Ar-condicionado", "Área externa com rede", "Churrasqueira", "Cozinha completa", "Estacionamento privativo"],
-    regras: ["Não é permitido fumar no interior do imóvel", "Respeitar o horário de silêncio a partir das 22h", "Uso consciente da área externa comum"],
   },
 ];
 
