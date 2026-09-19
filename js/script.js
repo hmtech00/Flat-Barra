@@ -10,7 +10,7 @@
 const SITE_CONFIG = {
   nomeMarca: "RN Hospitalidade Turismo",
   whatsappNumero: "5571996673131", // <-- ALTERE: código do país + DDD + número, sem espaços/símbolos
-  email: "infobahiastay@gmail.com", // <-- ALTERE: e-mail de contato
+  email: "rnhospitalidadeeturismo@gmail.com", // <-- ALTERE: e-mail de contato
   instagram: "https://instagram.com/bahiastay1", // <-- ALTERE: link do Instagram
   instagramHandle: "@bahiastay1",
   localizacao: "Salvador, Bahia, Brasil",
