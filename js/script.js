@@ -93,7 +93,7 @@ const IMG = {
 const apartamentos = [
   {
     id: 1,
-    nome: "Apartamento Brisa da Barra",
+    nome: "Porto Privilege",
     regiao: "Barra, Salvador",
     regiaoFiltro: "barra",
     enderecoMapa: "Alameda Antunes, 56 - Barra, Salvador - BA, 40140-020",
@@ -101,7 +101,7 @@ const apartamentos = [
     quartos: 1,
     camas: 2,
     banheiros: 2,
-    descricaoCurta: "Duplex aconchegante no Porto Privilege, com piscina na cobertura e vista para o mar.",
+    descricaoCurta: "Duplex aconchegante na Barra, com piscina na cobertura e vista para o mar.",
     descricao:
       "Um apartamento duplex confortável e moderno para aproveitar Salvador com praticidade. Localizado no charmoso bairro da Barra, no condomínio Porto Privilege, fica a poucos minutos da praia, de restaurantes e do icônico Farol da Barra. Sala de estar integrada à cozinha no piso inferior, com escada para o quarto no mezanino, decoração leve e varanda com vista para a cidade e o mar. O prédio conta com piscina na cobertura com vista panorâmica e mercado 24 horas.",
     imagens: IMG.apto1,
