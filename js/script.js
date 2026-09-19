@@ -11,8 +11,8 @@ const SITE_CONFIG = {
   nomeMarca: "RN Hospitalidade Turismo",
   whatsappNumero: "5571996673131", // <-- ALTERE: código do país + DDD + número, sem espaços/símbolos
   email: "rnhospitalidadeeturismo@gmail.com", // <-- ALTERE: e-mail de contato
-  instagram: "https://instagram.com/bahiastay1", // <-- ALTERE: link do Instagram
-  instagramHandle: "@bahiastay1",
+  instagram: "https://www.instagram.com/rnhospitalidadeeturismo", // <-- ALTERE: link do Instagram
+  instagramHandle: "@rnhospitalidadeeturismo",
   localizacao: "Salvador, Bahia, Brasil",
   horarioAtendimento: "Todos os dias, das 8h às 22h",
 };
