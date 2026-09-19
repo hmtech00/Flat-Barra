@@ -11,8 +11,8 @@ const SITE_CONFIG = {
   nomeMarca: "Bahia Stay",
   whatsappNumero: "5571996673131", // <-- ALTERE: código do país + DDD + número, sem espaços/símbolos
   email: "infobahiastay@gmail.com", // <-- ALTERE: e-mail de contato
-  instagram: "https://instagram.com/bahiastay", // <-- ALTERE: link do Instagram
-  instagramHandle: "@bahiastay",
+  instagram: "https://instagram.com/bahiastay1", // <-- ALTERE: link do Instagram
+  instagramHandle: "@bahiastay1",
   localizacao: "Salvador, Bahia, Brasil",
   horarioAtendimento: "Todos os dias, das 8h às 22h",
 };
