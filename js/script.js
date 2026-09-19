@@ -1,5 +1,5 @@
 /* =========================================================
-   BAHIA STAY — script.js
+   RN HOSPITALIDADE TURISMO — script.js
    Configurações centrais, dados de demonstração e funções
    compartilhadas por todas as páginas do site.
    ========================================================= */
@@ -8,7 +8,7 @@
    1. CONFIGURAÇÃO CENTRAL — altere aqui os dados da marca
    --------------------------------------------------------- */
 const SITE_CONFIG = {
-  nomeMarca: "Bahia Stay",
+  nomeMarca: "RN Hospitalidade Turismo",
   whatsappNumero: "5571996673131", // <-- ALTERE: código do país + DDD + número, sem espaços/símbolos
   email: "infobahiastay@gmail.com", // <-- ALTERE: e-mail de contato
   instagram: "https://instagram.com/bahiastay1", // <-- ALTERE: link do Instagram

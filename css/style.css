@@ -1,5 +1,5 @@
 /* =========================================================
-   BAHIA STAY — style.css
+   RN HOSPITALIDADE TURISMO — style.css
    ========================================================= */
 
 /* ---------------------------------------------------------
@@ -189,7 +189,8 @@ select:focus-visible {
 
 .logo {
   font-family: var(--fonte-titulo);
-  font-size: 1.5rem;
+  font-size: clamp(0.95rem, 4.6vw, 1.35rem);
+  line-height: 1.15;
   font-weight: 700;
   color: var(--cor-verde);
   letter-spacing: 0.02em;
