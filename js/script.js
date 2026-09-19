@@ -110,7 +110,7 @@ const apartamentos = [
   },
   {
     id: 2,
-    nome: "Apartamento Horizonte da Barra",
+    nome: "Apartamento Portinari",
     regiao: "Barra, Salvador",
     regiaoFiltro: "barra",
     enderecoMapa: "Alameda Antunes, 51 - Barra, Salvador - BA",
