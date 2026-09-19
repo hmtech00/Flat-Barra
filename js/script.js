@@ -10,7 +10,7 @@
 const SITE_CONFIG = {
   nomeMarca: "Bahia Stay",
   whatsappNumero: "5571999999999", // <-- ALTERE: código do país + DDD + número, sem espaços/símbolos
-  email: "contato@bahiastay.com.br", // <-- ALTERE: e-mail de contato
+  email: "infobahiastay@gmail.com", // <-- ALTERE: e-mail de contato
   instagram: "https://instagram.com/bahiastay", // <-- ALTERE: link do Instagram
   instagramHandle: "@bahiastay",
   localizacao: "Salvador, Bahia, Brasil",
